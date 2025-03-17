@@ -1,0 +1,379 @@
+.main-title {
+	color: white;
+	text-align: center;
+	position: relative;
+	background: url(../images/banner-contact.jpg) no-repeat top center;
+	padding: 80px 0;
+}
+.main-title::before {
+	content: '';
+	position: absolute;
+	top: 0;
+	left: 0;
+	right: 0;
+	bottom: 0;
+	background: rgba(0,0,0,0.5);
+}
+.main-title h1 {
+	font-size: 34px;
+	margin: 0 0 24px;
+	line-height: 20px;
+	position: relative;
+	display: inline-block;
+	vertical-align: middle;
+	text-transform: uppercase;
+}
+
+.main-content {
+	padding: 25px 0 40px;
+}
+
+/* box-sidebar */
+.box-sidebar {
+	text-align: center;
+	margin-bottom: 30px;
+	border-bottom: 1px solid #efefef;
+}
+.box-sidebar ul {
+	display: inline-block;
+	vertical-align: middle;
+}
+.box-sidebar ul li {
+	float: left;
+	margin: 0 20px;
+	font-size: 16px;
+	position: relative;
+	padding-bottom: 25px;
+}
+.box-sidebar ul li a.active,
+.box-sidebar ul li a:hover {
+	color: var(--c1);
+}
+.box-sidebar ul li a::after {
+	content: '';
+	position: absolute;
+	bottom: 0;
+	left: 50%;
+	height: 4px;
+	width: 0;
+	background: var(--c1);
+	transform: translate(-50%);
+	transition: all .3s ease;
+}
+.box-sidebar ul li a.active::after,
+.box-sidebar ul li a:hover::after {
+	width: 100%;
+}
+
+.box-focus {
+	color: white;
+	background: #0079cc;
+}
+.box-focus .news-large {
+	margin-right: 45px;
+}
+.box-focus .news-large .news {
+	position: relative;
+}
+.box-focus .news-large .img {}
+.box-focus .news-large .txt {
+	position: absolute;
+	left: 0;
+	right: 0;
+	bottom: 0;
+	z-index: 1;
+	padding: 15px 20px;
+	color: white;
+	background: rgba(0, 0, 0, 0.6);
+}
+.box-focus .news-large .txt a {
+	font-size: 20px;
+	font-weight: 700;
+	display: block;
+	line-height: 26px;
+	margin-bottom: 5px;
+}
+.box-focus .news-small {
+	margin-left: -60px;
+}
+.box-focus .news-small li {
+	padding: 14px 0 14px 25px;
+}
+.box-focus .news-small li:not(:last-child) {
+	border-bottom: 1px solid #1a87d1;
+}
+.box-focus .news-small .news {
+	display: flex;
+}
+.box-focus .news-small .news .txt {
+	padding-left: 20px;
+	width: calc(100% - 140px);
+}
+.box-focus .news-small .news .txt a {
+	font-size: 16px;
+	display: block;
+	line-height: 24px;
+	margin-bottom: 5px;
+}
+
+.post {
+	margin-top: 20px;
+}
+.post .inner {
+	position: relative;
+	background: #efefef;
+	transition: all .3s ease;
+}
+.post .inner:hover {
+	color: white;
+	background: var(--c1);
+}
+.post .inner .img {
+	overflow: hidden;
+	position: relative;
+}
+.post .inner .img a {
+	display: block;
+}
+.post .inner .img a:hover {
+	transform: scale(1.12);
+}
+.post .inner .img a span {
+	display: block;
+	position: relative;
+	padding-top: 66.25%;
+}
+.post .inner .img a img {
+	top: 50%;
+	left: 50%;
+	width: 100%;
+    height: 100%;
+	max-width: 100%;
+	max-height: 100%;
+	position: absolute;
+	transform: translate(-50%, -50%);
+	object-fit: fill;
+}
+.post .inner .txt {
+	padding: 15px;
+	position: relative;
+}
+.post .inner .txt ul li {
+	color: #999;
+	transition: all .3s ease;
+}
+.post .inner:hover .txt a,
+.post .inner:hover .txt ul li {
+	color: white;
+}
+.post .inner .txt h2 {
+	height: 48px;
+	font-size: 18px;
+	overflow: hidden;
+	margin: 0 0 10px;
+}
+.post .inner .txt h2 a {
+	line-height: 24px;
+	transition: all .3s ease;
+}
+
+.the-content {
+	margin-top: 40px;
+}
+.entry-meta {
+	display: flex;
+	margin-bottom: 10px;
+}
+.entry-meta li {
+	color: #999;
+	padding: 0 5px;
+}
+.entry-meta li:first-child {
+	padding-left: 0;
+}
+.entry-meta li .fa {
+	margin-right: 5px;
+}
+
+.entry {
+	font-size: 16px;
+	line-height: 1.5;
+	padding-bottom: 20px;
+}
+
+.recent-posts {
+	padding: 20px;
+	margin-bottom: 20px;
+	border: 1px solid #e1e1e1;
+}
+.recent-posts .widget-title {
+	font-size: 16px;
+	color: var(--c1);
+	font-weight: 700;
+	text-transform: uppercase;
+}
+.recent-posts .posts {}
+.recent-posts .posts>li {
+	padding: 15px 0;
+	border-bottom: 1px solid #e1e1e1;
+}
+.recent-posts .posts>li:last-child {
+	padding-bottom: 0;
+	border-bottom: 0;
+}
+.recent-posts .posts .post {
+	margin: 0;
+}
+.recent-posts .posts .inner {
+	overflow: hidden;
+	background: none;
+}
+.recent-posts .posts .inner:hover .txt a {
+	color: var(--c1);
+}
+.recent-posts .posts .inner:hover .txt li {
+	color: #999;
+}
+.recent-posts .posts .inner .img {
+	position: relative;
+	width: 90px;
+	float: left;
+	z-index: 1;
+}
+.recent-posts .posts .inner .img a {
+	padding: 0;
+}
+.recent-posts .posts .inner .img a span {
+	padding: 0;
+	width: 90px;
+	height: 60px;
+	position: relative;
+}
+.recent-posts .posts .inner .txt {
+	padding: 0 0 0 105px;
+	background: none;
+}
+.recent-posts .posts .inner .txt h2 {
+	font-size: 14px;
+	height: initial;
+	margin: 0 0 5px;
+}
+.recent-posts .posts .inner .txt h2 a {
+	line-height: 20px;
+}
+.recent-posts .posts .inner .txt .meta {
+	color: #999;
+	font-size: 13px;
+}
+
+.box-share {
+	margin-bottom: 20px;
+}
+.box-share ul {
+	display: flex;
+	background: #efefef;
+	padding: 10px 10px 3px;
+}
+
+.facebook-comment {
+	margin-top: 20px;
+}
+
+.box-related {
+	margin-top: 20px;
+}
+.box-related .widget-title span {
+	font-size: 32px;
+	text-transform: uppercase;
+	font-weight: 400;
+	font-family: 'Open Sans', sans-serif;
+}
+.box-related .post {
+	margin-top: 20px;
+}
+
+.noitem .alert {
+	padding: 30px;
+	font-size: 16px;
+	margin: 40px 0 0;
+	text-align: center;
+}
+
+.post-tag {
+	margin-bottom: 20px;
+}
+.post-tag li {
+	line-height: 20px;
+	margin: 5px 5px 0 0;
+	display: inline-block;
+}
+.post-tag li a {
+	display: inline-block;
+	background: #efefef;
+    padding: 5px 10px;
+}
+
+@media screen and (max-width: 1200px)
+{
+	.main-title h1 {
+		margin: 0;
+		font-size: 30px;
+		line-height: 1.5;
+	}
+	.box-focus .news-small li:first-child {
+		display: none;
+	}
+}
+
+@media screen and (max-width: 992px)
+{
+
+}
+
+@media screen and (max-width: 767px)
+{
+	.main-content {
+		padding: 40px 0;
+	}
+	.box-sidebar {
+		display: none;
+	}
+	.posts {
+		margin-top: -20px;
+	}
+	.box-focus {
+		margin-bottom: 20px;
+	}
+	.box-focus .news-large {
+		margin-right: 0;
+	}
+	.box-focus .news-large .txt {
+		padding: 15px;
+	}
+	.box-focus .news-small {
+		margin-left: 0;
+	}
+	.box-focus .news-small li:first-child {
+		display: block;
+	}
+	.box-focus .news-small li {
+		padding: 15px;
+	}
+	.box-focus .news-small .news .txt {
+		padding-left: 15px;
+	}
+	.box-focus .news-small .news .txt a {
+		height: 48px;
+		overflow: hidden;
+		margin-bottom: 10px;
+	}
+	.the-content {
+		margin-top: 0;
+	}
+	.box-related .widget-title span {
+		font-size: 30px;
+	}
+	.post .inner .txt h2 {
+		height: initial;
+	}
+}

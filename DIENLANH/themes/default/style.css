@@ -1,0 +1,63 @@
+/*
+Theme Name: Máº·c Ä‘á»‹nh
+Author: LĂª Cá»¥i
+Author URI: tel:0936665880
+Theme URI: http://lecui.org
+Description: Thiáº¿t káº¿ web chuyĂªn nghiá»‡p, cao cáº¥p, chuáº©n SEO, ...
+Version: 1.0
+*/
+
+
+/* slash style */
+.slash {
+  display: block;
+  overflow: hidden;
+  position: relative;
+}
+
+.slash::after {
+  background: rgba(0, 0, 0, 0) linear-gradient(to right, rgba(255, 255, 255, 0) 0%, rgba(255, 255, 255, 0.3) 100%) repeat scroll 0 0;
+  content: "";
+  display: block;
+  height: 100%;
+  position: absolute;
+  right: -75%;
+  top: 0;
+  transform: skewX(-25deg);
+  width: 50%;
+  z-index: 2;
+}
+
+.slash:hover::after {
+  animation: 1s ease 0s normal none 1 running slash;
+  animation: 1s ease 0s normal none 1 running slash;
+  -webkit-animation: 1s ease 0s normal none 1 running slash;
+  -moz-animation: 1s ease 0s normal none 1 running slash;
+}
+
+@-webkit-keyframes slash {
+  0% {
+      right: 125%;
+}
+  125% {
+      right: 0;
+}
+}
+
+@-moz-keyframes slash {
+  0% {
+      right: 125%;
+}
+  125% {
+      right: 0;
+}
+}
+
+@keyframes slash {
+  0% {
+      right: 125%
+}
+  125% {
+      right: 0;
+}
+}
